@@ -6,3 +6,9 @@
 - [x] Substituir no site a logo gerada e as imagens editoriais temporárias pelos assets reais selecionados.
 - [x] Validar contraste, crop, acessibilidade, desktop e mobile.
 - [ ] Salvar novo checkpoint e entregar a versão atualizada.
+
+## Ajuste de enquadramento do hero
+
+- [x] Reduzir o zoom do background e reposicionar a foto para exibir mais da Sâmia.
+- [x] Validar contraste e leitura dos textos no novo enquadramento em desktop e mobile.
+- [ ] Salvar um checkpoint da correção e entregar a atualização.
