@@ -92,9 +92,9 @@ function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <a href="#inicio" aria-label="Samia Lima — início" className="brand-lockup">
       <img
-        src="/manus-storage/samia-monogram_d09d732a.png"
-        alt=""
-        className={`brand-symbol ${light ? "brand-symbol-light" : ""}`}
+        src="/manus-storage/samia-instagram-profile-samia_10241799.jpg"
+        alt="Retrato de Sâmia Lima"
+        className="brand-symbol brand-symbol-real"
       />
       <span className="brand-type">
         <strong>SAMIA</strong>
@@ -169,7 +169,7 @@ export default function Home() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-image-wrap">
             <img
-              src="/manus-storage/samia-hero_b71c9837.png"
+              src="/manus-storage/samia-instagram-portrait_4b025e73.jpg"
               alt="Sâmia Lima em retrato editorial, com cabelos longos e saudáveis"
               className="hero-image"
             />
@@ -232,8 +232,8 @@ export default function Home() {
             <div className="about-image-column">
               <div className="image-frame image-frame-tall">
                 <img
-                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=85"
-                  alt="Sâmia Lima avaliando cuidadosamente o cabelo de uma cliente"
+                  src="/manus-storage/samia-instagram-profile-samia_10241799.jpg"
+                  alt="Retrato editorial em preto e branco de Sâmia Lima"
                   loading="lazy"
                 />
                 <span className="image-caption">Método Samia Lima · 01</span>
@@ -336,7 +336,7 @@ export default function Home() {
         <section className="education-section section-pad" id="capacitacao">
           <div className="page-width education-grid">
             <div className="education-image-wrap">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=85" alt="Sâmia Lima ensinando um grupo de profissionais" loading="lazy" />
+              <img src="/manus-storage/samia-instagram-blazer_673dc806.jpg" alt="Sâmia Lima em um ambiente profissional" loading="lazy" />
               <div className="education-image-label">
                 <span>Hactoon Professional</span>
                 <small>Embaixadora oficial</small>
@@ -467,7 +467,7 @@ export default function Home() {
         <div className="page-width footer-bottom">
           <span>© 2026 Samia Lima. Todos os direitos reservados.</span>
           <span>Feito com intenção.</span>
-          <a href="#contato" aria-label="Instagram Samia Lima"><Instagram size={16} strokeWidth={1.4} /></a>
+          <a href="https://www.instagram.com/samialimap/" target="_blank" rel="noreferrer" aria-label="Instagram Samia Lima"><Instagram size={16} strokeWidth={1.4} /></a>
         </div>
       </footer>
 

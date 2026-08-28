@@ -134,6 +134,8 @@ img { display: block; max-width: 100%; }
 .header-inner { width: min(100% - 64px, 1280px); height: 88px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand-lockup { display: inline-flex; align-items: center; gap: 11px; flex-shrink: 0; }
 .brand-symbol { width: 30px; height: 30px; object-fit: contain; }
+.brand-symbol-real { width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; object-fit: cover; object-position: center; filter: grayscale(1) contrast(1.04); transition: transform 220ms var(--ease-out), border-color 180ms ease, filter 180ms ease; }
+.brand-lockup:hover .brand-symbol-real { transform: rotate(-5deg) scale(1.04); border-color: var(--gold-light); filter: grayscale(0.18) contrast(1.02); }
 .brand-type { display: flex; flex-direction: column; line-height: 0.85; color: var(--paper); transition: color 220ms var(--ease-out); }
 .site-header-scrolled .brand-type { color: var(--ink); }
 .brand-type strong { font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.23em; }
@@ -171,7 +173,7 @@ img { display: block; max-width: 100%; }
 .hero-section { position: relative; min-height: max(720px, 91svh); display: flex; align-items: center; background: var(--ink); color: var(--paper); }
 .hero-image-wrap, .hero-overlay, .hero-grain { position: absolute; inset: 0; }
 .hero-image-wrap { overflow: hidden; }
-.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: 58% center; animation: hero-reveal 1.2s var(--ease-out) both; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: 68% center; animation: hero-reveal 1.2s var(--ease-out) both; }
 .hero-overlay { background: linear-gradient(90deg, rgba(23, 26, 23, 0.92) 0%, rgba(23, 26, 23, 0.71) 38%, rgba(23, 26, 23, 0.14) 76%, rgba(23, 26, 23, 0.35) 100%); }
 .hero-grain { opacity: 0.12; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.24'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; pointer-events: none; }
 .hero-content { position: relative; z-index: 2; padding-top: 45px; }
@@ -361,6 +363,7 @@ img { display: block; max-width: 100%; }
   .section-pad-dark { padding: 92px 0; }
   .header-inner { height: 74px; }
   .brand-symbol { width: 27px; height: 27px; }
+  .brand-symbol-real { width: 31px; height: 31px; }
   .hero-section { min-height: 760px; align-items: end; padding-bottom: 104px; }
   .hero-image { object-position: 67% center; }
   .hero-overlay { background: linear-gradient(180deg, rgba(23, 26, 23, 0.21) 0%, rgba(23, 26, 23, 0.38) 30%, rgba(23, 26, 23, 0.93) 84%); }
