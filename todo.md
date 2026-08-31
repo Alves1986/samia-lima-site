@@ -24,4 +24,4 @@
 - [x] Revisar e ajustar scripts e configuração para build/deploy na Vercel.
 - [x] Adicionar documentação de instalação, build, deploy e variáveis de ambiente.
 - [x] Validar o build e a estrutura de SPA.
-- [ ] Criar e enviar o repositório privado para o GitHub.
+- [x] Criar e enviar o repositório privado para o GitHub.
