@@ -133,13 +133,16 @@ img { display: block; max-width: 100%; }
 .site-header-scrolled { background: rgba(243, 240, 235, 0.94); color: var(--ink); box-shadow: 0 1px 0 rgba(36, 39, 36, 0.12); backdrop-filter: blur(16px); }
 .header-inner { width: min(100% - 64px, 1280px); height: 88px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand-lockup { display: inline-flex; align-items: center; gap: 11px; flex-shrink: 0; }
+.brand-copy { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 5px; }
 .brand-symbol { width: 30px; height: 30px; object-fit: contain; }
 .brand-symbol-real { width: 36px; height: 36px; border: 1px solid var(--gold); border-radius: 50%; object-fit: cover; object-position: center; filter: grayscale(1) contrast(1.04); transition: transform 220ms var(--ease-out), border-color 180ms ease, filter 180ms ease; }
 .brand-lockup:hover .brand-symbol-real { transform: rotate(-5deg) scale(1.04); border-color: var(--gold-light); filter: grayscale(0.18) contrast(1.02); }
-.brand-type { display: flex; flex-direction: column; line-height: 0.85; color: var(--paper); transition: color 220ms var(--ease-out); }
+.brand-type { display: flex; flex-direction: column; line-height: 0.9; color: var(--paper); transition: color 220ms var(--ease-out); }
 .site-header-scrolled .brand-type { color: var(--ink); }
 .brand-type strong { font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.23em; }
-.brand-type em { margin-top: 5px; padding-left: 10px; font-family: "Cormorant Garamond", serif; font-size: 12px; font-style: normal; font-weight: 500; letter-spacing: 0.34em; }
+.brand-type em { margin-top: 4px; padding-left: 10px; font-family: "Cormorant Garamond", serif; font-size: 12px; font-style: normal; font-weight: 500; letter-spacing: 0.34em; }
+.brand-tagline { color: var(--gold-light); font-size: 8px; font-weight: 700; letter-spacing: 0.16em; line-height: 1.1; text-transform: uppercase; white-space: nowrap; }
+.site-header-scrolled .brand-tagline { color: var(--gold); }
 .desktop-nav { display: flex; align-items: center; gap: clamp(22px, 3.2vw, 46px); margin-left: auto; margin-right: clamp(14px, 3vw, 40px); }
 .desktop-nav a { position: relative; padding: 8px 0; font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; opacity: 0.85; transition: opacity 180ms ease; }
 .desktop-nav a::after { content: ""; position: absolute; right: 0; bottom: 2px; left: 0; height: 1px; background: var(--gold-light); transform: scaleX(0); transform-origin: right; transition: transform 220ms var(--ease-out); }
@@ -364,6 +367,10 @@ img { display: block; max-width: 100%; }
   .header-inner { height: 74px; }
   .brand-symbol { width: 27px; height: 27px; }
   .brand-symbol-real { width: 31px; height: 31px; }
+  .brand-copy { gap: 4px; }
+  .brand-type strong { font-size: 11px; }
+  .brand-type em { margin-top: 3px; font-size: 10px; }
+  .brand-tagline { max-width: 205px; overflow: hidden; font-size: 7px; letter-spacing: 0.12em; text-overflow: ellipsis; }
   .hero-section { min-height: 760px; align-items: end; padding-bottom: 104px; }
   .hero-image-wrap { display: block; }
   .hero-image { width: 100%; object-position: 68% center; }

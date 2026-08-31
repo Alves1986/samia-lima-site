@@ -31,3 +31,9 @@
 - [x] Corrigir o alinhamento e o espaçamento interno do botão dourado.
 - [x] Garantir que os dois CTAs não se sobreponham em desktop e mobile.
 - [x] Validar o hero e salvar um checkpoint da correção.
+
+## Correção da marca
+
+- [x] Separar o nome Samia Lima da assinatura profissional no bloco de marca.
+- [x] Ajustar alinhamento, largura e espaçamento em desktop e mobile.
+- [x] Validar o resultado e salvar um checkpoint da correção.

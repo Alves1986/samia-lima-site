@@ -96,9 +96,12 @@ function BrandMark({ light = false }: { light?: boolean }) {
         alt="Retrato de Sâmia Lima"
         className="brand-symbol brand-symbol-real"
       />
-      <span className="brand-type">
-        <strong>SAMIA</strong>
-        <em>LIMA</em>
+      <span className="brand-copy">
+        <span className="brand-type">
+          <strong>SAMIA</strong>
+          <em>LIMA</em>
+        </span>
+        <span className="brand-tagline">Especialista em terapia capilar avançada</span>
       </span>
     </a>
   );
