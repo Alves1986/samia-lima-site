@@ -92,7 +92,7 @@ function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <a href="#inicio" aria-label="Samia Lima — início" className="brand-lockup">
       <img
-        src="/manus-storage/samia-instagram-profile-samia_10241799.jpg"
+        src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663663537474/mlbZuUpnmEkqgmXO.jpg"
         alt="Retrato de Sâmia Lima"
         className="brand-symbol brand-symbol-real"
       />
@@ -169,7 +169,7 @@ export default function Home() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-image-wrap">
             <img
-              src="/manus-storage/samia-instagram-portrait_4b025e73.jpg"
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663663537474/DPlcWkjwQOaIMBnA.jpg"
               alt="Sâmia Lima em retrato editorial, com cabelos longos e saudáveis"
               className="hero-image"
             />
@@ -232,7 +232,7 @@ export default function Home() {
             <div className="about-image-column">
               <div className="image-frame image-frame-tall">
                 <img
-                  src="/manus-storage/samia-instagram-profile-samia_10241799.jpg"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663663537474/mlbZuUpnmEkqgmXO.jpg"
                   alt="Retrato editorial em preto e branco de Sâmia Lima"
                   loading="lazy"
                 />
@@ -336,7 +336,7 @@ export default function Home() {
         <section className="education-section section-pad" id="capacitacao">
           <div className="page-width education-grid">
             <div className="education-image-wrap">
-              <img src="/manus-storage/samia-instagram-blazer_673dc806.jpg" alt="Sâmia Lima em um ambiente profissional" loading="lazy" />
+              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663663537474/DPlcWkjwQOaIMBnA.jpg" alt="Retrato de Sâmia Lima em um ambiente profissional" loading="lazy" />
               <div className="education-image-label">
                 <span>Hactoon Professional</span>
                 <small>Embaixadora oficial</small>

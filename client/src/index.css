@@ -247,8 +247,8 @@ img { display: block; max-width: 100%; }
 /* Education */
 .education-section { background: var(--paper-bright); }
 .education-grid { display: grid; grid-template-columns: minmax(330px, 1.05fr) minmax(350px, 0.95fr); gap: clamp(70px, 11vw, 160px); align-items: center; }
-.education-image-wrap { position: relative; overflow: hidden; aspect-ratio: 1.03; background: var(--secondary); }
-.education-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.education-image-wrap { position: relative; overflow: hidden; aspect-ratio: 1.03; background: var(--paper); }
+.education-image-wrap img { width: 100%; height: 100%; object-fit: contain; object-position: center; background: var(--paper); }
 .education-image-label { position: absolute; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 17px; background: rgba(36, 39, 36, 0.88); color: var(--paper); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 .education-image-label small { color: var(--gold-light); font-size: 9px; font-weight: 600; }
 .education-copy .lead-copy { max-width: 450px; margin: 29px 0 0; color: var(--ink-soft); font-size: 17px; line-height: 1.65; }
