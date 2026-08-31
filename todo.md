@@ -25,3 +25,9 @@
 - [x] Adicionar documentação de instalação, build, deploy e variáveis de ambiente.
 - [x] Validar o build e a estrutura de SPA.
 - [x] Criar e enviar o repositório privado para o GitHub.
+
+## Correção dos botões do hero
+
+- [x] Corrigir o alinhamento e o espaçamento interno do botão dourado.
+- [x] Garantir que os dois CTAs não se sobreponham em desktop e mobile.
+- [x] Validar o hero e salvar um checkpoint da correção.
