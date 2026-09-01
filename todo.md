@@ -43,3 +43,9 @@
 - [x] Remover a assinatura repetida do bloco de marca.
 - [x] Conferir o nome SAMIA LIMA e o header em desktop e mobile.
 - [x] Validar, enviar ao GitHub e salvar um checkpoint.
+
+## Ajuste final do espaçamento da marca
+
+- [x] Descer a assinatura profissional para longe do sobrenome LIMA.
+- [x] Validar o espaço em desktop e mobile.
+- [x] Enviar a correção e salvar um checkpoint.
