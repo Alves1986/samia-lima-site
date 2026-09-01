@@ -49,3 +49,9 @@
 - [x] Descer a assinatura profissional para longe do sobrenome LIMA.
 - [x] Validar o espaço em desktop e mobile.
 - [x] Enviar a correção e salvar um checkpoint.
+
+## Animações do hero
+
+- [x] Aplicar fade-in suave à chamada “Especialista em terapia capilar avançada”.
+- [x] Melhorar a transição de hover dos botões principais.
+- [x] Validar redução de movimento, desktop/mobile e salvar checkpoint.
