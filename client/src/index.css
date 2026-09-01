@@ -325,6 +325,7 @@ img { display: block; max-width: 100%; }
 @keyframes rise-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fade-in-soft { from { opacity: 0; } to { opacity: 1; } }
 @keyframes hero-reveal { from { opacity: 0; transform: scale(1.035); } to { opacity: 1; transform: scale(1); } }
+@keyframes hero-image-fade-mobile { from { opacity: 0; } to { opacity: 1; } }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -369,7 +370,7 @@ img { display: block; max-width: 100%; }
   .brand-type em { margin-top: 3px; font-size: 10px; }
   .hero-section { min-height: 760px; align-items: end; padding-bottom: 104px; }
   .hero-image-wrap { display: block; }
-  .hero-image { display: block; width: 94%; margin-left: auto; object-fit: contain; object-position: right center; background: var(--ink); }
+  .hero-image { display: block; width: 94%; margin-left: auto; object-fit: contain; object-position: right center; background: var(--ink); animation: hero-image-fade-mobile 1.2s 120ms var(--ease-out) both; }
   .hero-overlay { background: linear-gradient(180deg, rgba(23, 26, 23, 0.21) 0%, rgba(23, 26, 23, 0.38) 30%, rgba(23, 26, 23, 0.93) 84%); }
   .hero-content { padding-top: 100px; padding-bottom: 110px; }
   .hero-content .section-kicker { margin-top: 14px; }

@@ -61,3 +61,9 @@
 - [x] Afastar a foto e deslocá-la para a direita no mobile.
 - [x] Validar rosto, texto e composição em mobile e desktop.
 - [x] Enviar a correção e salvar um checkpoint.
+
+## Fade-in da imagem da hero no mobile
+
+- [x] Aplicar fade-in suave apenas ao asset da hero em mobile.
+- [x] Validar que o enquadramento e a redução de movimento continuam corretos.
+- [x] Enviar a correção e salvar um checkpoint.
