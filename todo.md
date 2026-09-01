@@ -37,3 +37,9 @@
 - [x] Separar o nome Samia Lima da assinatura profissional no bloco de marca.
 - [x] Ajustar alinhamento, largura e espaçamento em desktop e mobile.
 - [x] Validar o resultado e salvar um checkpoint da correção.
+
+## Remoção de assinatura duplicada
+
+- [x] Remover a assinatura repetida do bloco de marca.
+- [x] Conferir o nome SAMIA LIMA e o header em desktop e mobile.
+- [x] Validar, enviar ao GitHub e salvar um checkpoint.
