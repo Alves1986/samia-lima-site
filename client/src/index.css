@@ -369,7 +369,7 @@ img { display: block; max-width: 100%; }
   .brand-type em { margin-top: 3px; font-size: 10px; }
   .hero-section { min-height: 760px; align-items: end; padding-bottom: 104px; }
   .hero-image-wrap { display: block; }
-  .hero-image { width: 100%; object-position: 68% center; }
+  .hero-image { display: block; width: 94%; margin-left: auto; object-fit: contain; object-position: right center; background: var(--ink); }
   .hero-overlay { background: linear-gradient(180deg, rgba(23, 26, 23, 0.21) 0%, rgba(23, 26, 23, 0.38) 30%, rgba(23, 26, 23, 0.93) 84%); }
   .hero-content { padding-top: 100px; padding-bottom: 110px; }
   .hero-content .section-kicker { margin-top: 14px; }

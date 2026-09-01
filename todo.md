@@ -55,3 +55,9 @@
 - [x] Aplicar fade-in suave à chamada “Especialista em terapia capilar avançada”.
 - [x] Melhorar a transição de hover dos botões principais.
 - [x] Validar redução de movimento, desktop/mobile e salvar checkpoint.
+
+## Ajuste de enquadramento mobile da hero
+
+- [x] Afastar a foto e deslocá-la para a direita no mobile.
+- [x] Validar rosto, texto e composição em mobile e desktop.
+- [x] Enviar a correção e salvar um checkpoint.
