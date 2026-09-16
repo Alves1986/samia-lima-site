@@ -135,6 +135,7 @@ export default function Home() {
             <a href="#terapia">Terapia capilar</a>
             <a href="#capacitacao">Capacitação</a>
             <a href="#contato">Contato</a>
+            <a href="/academy">Academy</a>
           </nav>
           <button
             className="header-cta"
@@ -159,6 +160,7 @@ export default function Home() {
           <a href="#terapia" onClick={closeMenu}>Terapia capilar</a>
           <a href="#capacitacao" onClick={closeMenu}>Capacitação</a>
           <a href="#contato" onClick={closeMenu}>Contato</a>
+          <a href="/academy" onClick={closeMenu}>Academy</a>
           <button type="button" onClick={() => { closeMenu(); scrollToId("contato"); }}>
             Agendar avaliação <ArrowUpRight size={16} />
           </button>
