@@ -2,6 +2,7 @@ import { and, asc, eq, gt, inArray, isNull, or } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import {
   academyCourses,
+  academyFeedback,
   academyLessons,
   academyMaterials,
   academyModules,
@@ -102,7 +103,10 @@ export async function getCourseWithContent(courseId: number, userId?: number) {
   const progress = userId && lessonIds.length
     ? await db.select().from(academyProgress).where(and(eq(academyProgress.userId, userId), inArray(academyProgress.lessonId, lessonIds)))
     : [];
-  return { course, modules, lessons, materials, progress };
+  const feedback = userId && lessonIds.length
+    ? await db.select().from(academyFeedback).where(and(eq(academyFeedback.userId, userId), inArray(academyFeedback.lessonId, lessonIds)))
+    : [];
+  return { course, modules, lessons, materials, progress, feedback };
 }
 
 export async function getStudentDashboard(userId: number) {
@@ -206,4 +210,34 @@ export async function markLessonComplete(userId: number, lessonId: number, compl
   await db.insert(academyProgress).values({ userId, lessonId, completedAt: completed ? new Date() : null }).onDuplicateKeyUpdate({
     set: { completedAt: completed ? new Date() : null, updatedAt: new Date() },
   });
+}
+
+export async function saveLessonFeedback(userId: number, lessonId: number, rating: number, comment?: string) {
+  const db = await getDb();
+  if (!db) throw new Error("Database unavailable");
+  await db.insert(academyFeedback).values({ userId, lessonId, rating, comment: comment || null }).onDuplicateKeyUpdate({
+    set: { rating, comment: comment || null, updatedAt: new Date() },
+  });
+}
+
+export async function getAdminAcademyStats() {
+  const db = await getDb();
+  if (!db) return { activeSubscriptions: 0, totalStudents: 0, averageProgress: 0, completedLessons: 0, totalFeedback: 0, averageRating: 0 };
+  const [studentRows, activeRows, progressRows, lessonRows, feedbackRows] = await Promise.all([
+    db.select({ id: users.id }).from(users),
+    db.select({ id: academyMemberships.id }).from(academyMemberships).where(or(eq(academyMemberships.status, "active"), eq(academyMemberships.status, "trial"))),
+    db.select({ completedAt: academyProgress.completedAt }).from(academyProgress),
+    db.select({ id: academyLessons.id }).from(academyLessons),
+    db.select({ rating: academyFeedback.rating }).from(academyFeedback),
+  ]);
+  const totalLessons = lessonRows.length;
+  const completedLessons = progressRows.filter(item => item.completedAt).length;
+  return {
+    activeSubscriptions: activeRows.length,
+    totalStudents: studentRows.length,
+    averageProgress: totalLessons ? Math.round((completedLessons / Math.max(1, studentRows.length * totalLessons)) * 100) : 0,
+    completedLessons,
+    totalFeedback: feedbackRows.length,
+    averageRating: feedbackRows.length ? Number((feedbackRows.reduce((sum, item) => sum + item.rating, 0) / feedbackRows.length).toFixed(1)) : 0,
+  };
 }

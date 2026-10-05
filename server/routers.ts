@@ -15,11 +15,13 @@ import {
   updateAcademyModule,
   updateAcademyCourse,
   getCourseWithContent,
+  getAdminAcademyStats,
   getStudentDashboard,
   listPublishedCourses,
   listAdminCourses,
   listAdminStudents,
   markLessonComplete,
+  saveLessonFeedback,
 } from "./db";
 
 export const appRouter = router({
@@ -51,7 +53,15 @@ export const appRouter = router({
         await markLessonComplete(ctx.user.id, input.lessonId, input.completed);
         return { success: true } as const;
       }),
-    adminOverview: adminProcedure.query(async () => ({ ready: true, students: await listAdminStudents(), courses: await listAdminCourses() })),
+    submitFeedback: protectedProcedure
+      .input(z.object({ lessonId: z.number().int().positive(), rating: z.number().int().min(1).max(5), comment: z.string().max(1000).optional() }))
+      .mutation(async ({ ctx, input }) => {
+        const membership = await getActiveMembership(ctx.user.id);
+        if (!membership) throw new TRPCError({ code: "FORBIDDEN", message: "Uma assinatura ativa é necessária para enviar feedback." });
+        await saveLessonFeedback(ctx.user.id, input.lessonId, input.rating, input.comment);
+        return { success: true } as const;
+      }),
+    adminOverview: adminProcedure.query(async () => ({ ready: true, stats: await getAdminAcademyStats(), students: await listAdminStudents(), courses: await listAdminCourses() })),
     adminActivateMembership: adminProcedure
       .input(z.object({ userId: z.number().int().positive(), planName: z.string().min(2).max(120).optional() }))
       .mutation(async ({ input }) => {

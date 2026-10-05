@@ -121,3 +121,19 @@ export const academyProgress = mysqlTable(
 
 export type AcademyProgress = typeof academyProgress.$inferSelect;
 export type InsertAcademyProgress = typeof academyProgress.$inferInsert;
+
+export const academyFeedback = mysqlTable(
+  "academy_feedback",
+  {
+    id: int("id").autoincrement().primaryKey(),
+    userId: int("userId").notNull(),
+    lessonId: int("lessonId").notNull(),
+    rating: int("rating").notNull(),
+    comment: text("comment"),
+    createdAt: timestamp("createdAt").defaultNow().notNull(),
+    updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+  },
+  table => ({ userLessonIdx: uniqueIndex("academy_feedback_user_lesson_idx").on(table.userId, table.lessonId) }),
+);
+export type AcademyFeedback = typeof academyFeedback.$inferSelect;
+export type InsertAcademyFeedback = typeof academyFeedback.$inferInsert;

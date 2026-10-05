@@ -15,6 +15,13 @@
       "when": 1789166231586,
       "tag": "0001_known_maginty",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1791207896776,
+      "tag": "0002_useful_silver_samurai",
+      "breakpoints": true
     }
   ]
 }
