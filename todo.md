@@ -5,19 +5,19 @@
 - [x] Baixar/copiar apenas os assets necessários para `/home/ubuntu/webdev-static-assets/` e otimizar formatos quando possível.
 - [x] Substituir no site a logo gerada e as imagens editoriais temporárias pelos assets reais selecionados.
 - [x] Validar contraste, crop, acessibilidade, desktop e mobile.
-- [ ] Salvar novo checkpoint e entregar a versão atualizada.
+- [x] Salvar novo checkpoint e entregar a versão atualizada.
 
 ## Ajuste de enquadramento do hero
 
 - [x] Reduzir o zoom do background e reposicionar a foto para exibir mais da Sâmia.
 - [x] Validar contraste e leitura dos textos no novo enquadramento em desktop e mobile.
-- [ ] Salvar um checkpoint da correção e entregar a atualização.
+- [x] Salvar um checkpoint da correção e entregar a atualização.
 
 ## Correção da foto de Capacitação
 
-- [ ] Substituir a foto incorreta por um asset confirmado da Sâmia Lima.
-- [ ] Ajustar o enquadramento para preservar a imagem inteira em desktop e mobile.
-- [ ] Validar a seção e salvar um checkpoint da correção.
+- [x] Substituir a foto incorreta por um asset confirmado da Sâmia Lima.
+- [x] Ajustar o enquadramento para preservar a imagem inteira em desktop e mobile.
+- [x] Validar a seção e salvar um checkpoint da correção.
 
 ## Preparação para GitHub e Vercel
 
@@ -77,7 +77,7 @@
 - [x] Criar tela de detalhe do curso, módulos, aulas e marcação de conclusão.
 - [x] Definir gestão inicial de conteúdo e acesso administrativo.
 - [x] Validar autenticação, proteção de dados, estados vazios, responsividade e build.
-- [ ] Salvar checkpoint e entregar a nova área de membros.
+- [x] Salvar checkpoint e entregar a nova área de membros.
 
 ## Completar Academy após validação de lacunas
 
@@ -85,7 +85,7 @@
 - [x] Inserir conteúdo inicial realista da Academy no banco, com curso, módulos, aulas e materiais.
 - [x] Implementar fluxo operacional de ativação de assinatura para o administrador/owner.
 - [x] Retornar progresso por aula, exibir concluídas e permitir marcar/desmarcar com feedback persistente.
-- [ ] Validar no navegador o fluxo autenticado de assinante com login real; estados públicos/protegidos, curso bloqueado e responsividade já foram verificados.
+- [x] Validar no navegador o fluxo autenticado de assinante com login real; estados públicos/protegidos, curso bloqueado e responsividade já foram verificados.
 
 ## Completar gestão administrativa e materiais
 
@@ -97,7 +97,7 @@
 
 - [x] Adicionar procedimentos admin para criar e editar cursos, módulos e aulas.
 - [x] Adicionar formulários de catálogo ao painel administrativo.
-- [ ] Validar autorização admin e fluxo completo de assinatura e acesso do aluno em sessão autenticada real.
+- [x] Validar autorização admin e fluxo completo de assinatura e acesso do aluno em sessão autenticada real.
 
 ## Edição completa de módulos e aulas
 
